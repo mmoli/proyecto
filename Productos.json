@@ -1,0 +1,152 @@
+[
+  {
+    "idProducto": 1,
+    "idTienda": 1,
+    "idTipo": 1,
+    "precio": 7.50
+  },
+  {
+    "idProducto": 2,
+    "idTienda": 1,
+    "idTipo": 2,
+    "precio": 27.80
+  },
+  {
+    "idProducto": 3,
+    "idTienda": 1,
+    "idTipo": 3,
+    "precio": 49.99
+  },
+  {
+    "idProducto": 4,
+    "idTienda": 1,
+    "idTipo": 4,
+    "precio": 49.99
+  },
+  {
+    "idProducto": 5,
+    "idTienda": 1,
+    "idTipo": 5,
+    "precio": 32.50
+  },
+  {
+    "idProducto": 6,
+    "idTienda": 2,
+    "idTipo": 6,
+    "precio": 44.50
+  },
+  {
+    "idProducto": 7,
+    "idTienda": 2,
+    "idTipo": 7,
+    "precio": 19.90
+  },
+  {
+    "idProducto": 8,
+    "idTienda": 2,
+    "idTipo": 8,
+    "precio": 15.00
+  },
+  {
+    "idProducto": 9,
+    "idTienda": 2,
+    "idTipo": 9,
+    "precio": 25.99
+  },
+  {
+    "idProducto": 10,
+    "idTienda": 2,
+    "idTipo": 10,
+    "precio": 72.99
+  },
+  {
+    "idProducto": 11,
+    "idTienda": 3,
+    "idTipo": 11,
+    "precio": 49.99
+  },
+  {
+    "idProducto": 12,
+    "idTienda": 3,
+    "idTipo": 12,
+    "precio": 69.99
+  },
+  {
+    "idProducto": 13,
+    "idTienda": 3,
+    "idTipo": 13,
+    "precio": 12.99
+  },
+  {
+    "idProducto": 14,
+    "idTienda": 3,
+    "idTipo": 6,
+    "precio": 23.99
+  },
+  {
+    "idProducto": 15,
+    "idTienda": 3,
+    "idTipo": 14,
+    "precio": 15.99
+  },
+  {
+    "idProducto": 16,
+    "idTienda": 4,
+    "idTipo": 15,
+    "precio": 23.99
+  },
+  {
+    "idProducto": 17,
+    "idTienda": 4,
+    "idTipo": 6,
+    "precio": 15.99
+  },
+  {
+    "idProducto": 18,
+    "idTienda": 4,
+    "idTipo": 16,
+    "precio": 24.50
+  },
+  {
+    "idProducto": 19,
+    "idTienda": 4,
+    "idTipo": 17,
+    "precio": 12.99
+  },
+  {
+    "idProducto": 20,
+    "idTienda": 4,
+    "idTipo": 10,
+    "precio": 25.99
+  },
+  {
+    "idProducto": 21,
+    "idTienda": 5,
+    "idTipo": 16,
+    "precio": 19.99
+  },
+  {
+    "idProducto": 22,
+    "idTienda": 5,
+    "idTipo": 18,
+    "precio": 35.99
+  },
+  {
+    "idProducto": 23,
+    "idTienda": 5,
+    "idTipo": 10,
+    "precio": 25.99
+  },
+  {
+    "idProducto": 24,
+    "idTienda": 5,
+    "idTipo": 19,
+    "precio": 13.99
+  },
+  {
+    "idProducto": 25,
+    "idTienda": 5,
+    "idTipo": 20,
+    "precio": 7.99
+  }
+]
