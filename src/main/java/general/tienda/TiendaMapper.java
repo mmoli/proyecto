@@ -1,11 +1,15 @@
 package general.tienda;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+
+import general.producto.Producto;
 
 public interface TiendaMapper
 {
@@ -17,6 +21,9 @@ public interface TiendaMapper
 	})
 	@Select("SELECT idTienda, idUbicacion, nombre from tienda WHERE idTienda = #{idTienda}")
 	Tienda selectTienda(int idTienda);
+	
+	@Select("SELECT * FROM zara.tienda")
+	List<Tienda> getTiendas();
 	
 	@Select("SELECT * FROM zara.tienda order by idTienda desc limit 1")
 	int lastInsert();

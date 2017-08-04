@@ -1,11 +1,15 @@
 package general.ubicacion;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+
+import general.tipo.Tipo;
 
 public interface UbicacionMapper
 {
@@ -17,6 +21,9 @@ public interface UbicacionMapper
 	})
 	@Select("SELECT idUbicacion, ciudad, direccion FROM zara.ubicacion WHERE idUbicacion = #{idUbicacion}")
 	Ubicacion selectUbicacion(int idUbicacion);
+	
+	@Select("SELECT * FROM zara.ubicacion")
+	List<Ubicacion> getUbicaciones();
 	
 	@Select("SELECT * FROM zara.ubicacion order by idUbicacion desc limit 1")
 	int lastInsert();

@@ -18,11 +18,12 @@ public interface ProductoMapper
 		@Result(property = "idTipo", column = "idTipo"), 
 		@Result(property = "precio", column = "precio")
 	})
-	@Select("SELECT * FROM zara.producto")
-	List<Producto> getProductos();
-	
+		
 	@Select("SELECT idProducto, idTienda, idTipo, precio from producto WHERE idProducto = #{idProducto}")
 	Producto selectProducto(int idProducto);
+	
+	@Select("SELECT * FROM zara.producto")
+	List<Producto> getProductos();
 
 	@Select("SELECT * FROM zara.producto order by idProducto desc limit 1")
 	int lastInsert();

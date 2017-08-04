@@ -1,8 +1,12 @@
 package general.tienda;
 
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
 
 import general.MyBatisUtil;
+import general.producto.Producto;
+import general.producto.ProductoMapper;
 
 public class TiendaDAO
 {
@@ -42,5 +46,13 @@ public class TiendaDAO
 		Tienda tienda = mapper.selectTienda(idTienda);
 		session.close();
 		return tienda;
+	}
+	
+	public List<Tienda> getAllData() {
+		  SqlSession session = MyBatisUtil.getSqlSessionFactory().openSession();	
+		  TiendaMapper mapper = session.getMapper(TiendaMapper.class);
+		  List<Tienda> tiendas = mapper.getTiendas();
+		  session.close();
+		  return tiendas;
 	}
 }

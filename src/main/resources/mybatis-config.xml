@@ -10,7 +10,7 @@
 				<property name="driver" value="com.mysql.jdbc.Driver" />
 				<property name="url" value="jdbc:mysql://localhost:3306/zara" />
 				<property name="username" value="root" />
-				<property name="password" value="sopraacademy" />
+				<property name="password" value="mysqlroot" />
 			</dataSource>
 		</environment>
 	</environments>

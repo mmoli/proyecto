@@ -1,8 +1,12 @@
 package general.ubicacion;
 
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
 
 import general.MyBatisUtil;
+import general.tipo.Tipo;
+import general.tipo.TipoMapper;
 
 public class UbicacionDAO
 {
@@ -42,5 +46,13 @@ public class UbicacionDAO
 		Ubicacion ubicacion = mapper.selectUbicacion(idUbicacion);
 		session.close();
 		return ubicacion;
+	}
+	
+	public List<Ubicacion> getAllData() {
+		  SqlSession session = MyBatisUtil.getSqlSessionFactory().openSession();	
+		  UbicacionMapper mapper = session.getMapper(UbicacionMapper.class);
+		  List<Ubicacion> ubicaciones = mapper.getUbicaciones();
+		  session.close();
+		  return ubicaciones;
 	}
 }

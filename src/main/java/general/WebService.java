@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 import general.producto.Producto;
 import general.producto.ProductoDAO;
-import general.producto.ProductoRest;
+import general.producto.ProductoREST;
 import general.tienda.Tienda;
 import general.tienda.TiendaDAO;
 import general.tipo.Tipo;
@@ -12,7 +12,7 @@ import general.tipo.TipoDAO;
 import general.ubicacion.Ubicacion;
 import general.ubicacion.UbicacionDAO;
 
-public class RunMybatis
+public class WebService
 {
 	public static void main(String[] args)
 	{	
@@ -57,10 +57,15 @@ public class RunMybatis
 		System.out.println(producto.toString());
 		// delete
 		productoDAO.delete(id);
-		System.out.println("---Data deleted---");*/
+		System.out.println("---Data deleted---");
 		
 		ProductoRest rest = new ProductoRest();
+		
 		rest.getAllProductos();
-		//SaveJSON.saveJSON(productoDAO.getAllData(), "Productos.json");
+		SaveJSON.saveJSON(productoDAO.getAllData(), "Productos.json");*/
+		
+		ElementosREST elementos = new ElementosREST();
+		elementos.getAll();
+
 	}
 }

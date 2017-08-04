@@ -10,7 +10,7 @@ import com.google.gson.GsonBuilder;
 
 import general.producto.Producto;
 
-public class SaveJSON
+public class GeneracionJSON
 {
 	public static <T> String getJSON(List<T> elementos)
 	{

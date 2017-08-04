@@ -1,16 +1,16 @@
 package general.producto;
 
-import general.SaveJSON;
+import general.GeneracionJSON;
 import static spark.Spark.get;
 
-public class ProductoRest
+public class ProductoREST
 {
 	public void getAllProductos()
 	{
 		get("/productos", (req, res) ->
 		{
 			ProductoDAO productoDAO = new ProductoDAO();
-			return SaveJSON.getJSON(productoDAO.getAllData());
+			return GeneracionJSON.getJSON(productoDAO.getAllData());
 		});
 	}
 }
