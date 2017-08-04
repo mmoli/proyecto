@@ -12,11 +12,17 @@ import general.producto.Producto;
 
 public class SaveJSON
 {
-	public static void saveProductos(List<Producto> productos)
+	public static <T> String getJSON(List<T> elementos)
 	{
-		try (Writer writer = new FileWriter("Productos.json")) {
 			Gson prettyJSON = new GsonBuilder().setPrettyPrinting().create();
-			prettyJSON.toJson(productos, writer);
+			return prettyJSON.toJson(elementos);
+	}
+	
+	public static <T> void saveJSON(List<T> elementos, String jsonName)
+	{
+		try (Writer writer = new FileWriter(jsonName)) {
+			Gson prettyJSON = new GsonBuilder().setPrettyPrinting().create();
+			prettyJSON.toJson(elementos, writer);
 		}
 		catch(IOException e)
 		{

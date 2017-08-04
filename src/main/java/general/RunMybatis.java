@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 
 import general.producto.Producto;
 import general.producto.ProductoDAO;
+import general.producto.ProductoRest;
 import general.tienda.Tienda;
 import general.tienda.TiendaDAO;
 import general.tipo.Tipo;
@@ -15,7 +16,7 @@ public class RunMybatis
 {
 	public static void main(String[] args)
 	{	
-		TipoDAO tipoDAO = new TipoDAO();
+		/*TipoDAO tipoDAO = new TipoDAO();
 		Tipo tipo = new Tipo();
 		tipo.setNombreTipo("Chanclas");
 		int idTipo = tipoDAO.save(tipo);
@@ -56,9 +57,10 @@ public class RunMybatis
 		System.out.println(producto.toString());
 		// delete
 		productoDAO.delete(id);
-		System.out.println("---Data deleted---");
+		System.out.println("---Data deleted---");*/
 		
-		
-		SaveJSON.saveProductos(productoDAO.getAllData());
+		ProductoRest rest = new ProductoRest();
+		rest.getAllProductos();
+		//SaveJSON.saveJSON(productoDAO.getAllData(), "Productos.json");
 	}
 }
