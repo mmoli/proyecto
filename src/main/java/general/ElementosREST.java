@@ -27,32 +27,7 @@ public class ElementosREST {
 	}
 
 
-	public void getAll() {
-		
-//		get("/productos", (req, res) ->
-//		{
-//			ProductoDAO productoDAO = new ProductoDAO();
-//			return SaveJSON.getJSON(productoDAO.getAllData());
-//		});
-//		
-//		get("/tiendas", (req, res) ->
-//		{
-//			TiendaDAO tiendaDAO = new TiendaDAO();
-//			return SaveJSON.getJSON(tiendaDAO.getAllData());
-//		});
-//		
-//		get("/tipos", (req, res) ->
-//		{
-//			TipoDAO tipoDAO = new TipoDAO();
-//			return SaveJSON.getJSON(tipoDAO.getAllData());
-//		});
-//		
-//		get("/ubicaciones", (req, res) ->
-//		{
-//			UbicacionDAO ubicacionDAO = new UbicacionDAO();
-//			return SaveJSON.getJSON(ubicacionDAO.getAllData());
-//		});
-		
+	public void getAll() {		
 		productoREST.getAllProductos();
 		tiendaREST.getAllTiendas();
 		tipoREST.getAllTipos();
